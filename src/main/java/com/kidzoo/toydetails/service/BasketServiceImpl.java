@@ -73,6 +73,10 @@ public class BasketServiceImpl {
         return repository.findById(id).orElse(null);
     }
 
+    public Basket getBasketByQueryId(int id){
+        return repository.findByQueryId(id);
+    }
+
 
     public List<Basket> getAllBasket() {
         return repository.findAll();
@@ -80,15 +84,8 @@ public class BasketServiceImpl {
 
 
     public CheckoutResponse checkoutResponse() {
-       CheckoutResponse checkoutResponse = new CheckoutResponse();
        List<CheckoutItem> items = repository.checkout();
-       double total = 0;
-       for (int i=0; i<items.size(); i++){
-       total = total + items.get(i).getTotal();
-       }
-       checkoutResponse.items=items;
-       checkoutResponse.total=total;
-        return checkoutResponse;
+        return new CheckoutResponse(items);
     }
 }
 

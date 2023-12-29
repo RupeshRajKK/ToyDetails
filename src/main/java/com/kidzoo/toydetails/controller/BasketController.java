@@ -23,7 +23,7 @@ public class BasketController {
     @Autowired
     BasketServiceImpl basketService;
 
-    @PostMapping(value = "/add", produces = "application/hal+json")
+    @PostMapping(value = "/basket/add", produces = "application/hal+json")
     public GeneralResponse add(@RequestBody Basket basket) {
         return basketService.add(basket);
     }
@@ -32,6 +32,11 @@ public class BasketController {
     @GetMapping(value = "/view-basket-by-ID/{id}", produces = "application/hal+json")
     public Basket getBasketById(@PathVariable int id) {
         return basketService.getBasketsById(id);
+    }
+
+    @GetMapping(value = "/view-basket-query-by-ID/{id}", produces = "application/hal+json")
+    public Basket getBasketByQueryId(@PathVariable int id) {
+        return basketService.getBasketByQueryId(id);
     }
 
     @GetMapping(value = "/view-all-basket", produces = "application/hal+json")

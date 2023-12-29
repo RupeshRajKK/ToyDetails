@@ -22,9 +22,13 @@ public class CheckoutResponse {
     @JsonProperty("I")
     public List<CheckoutItem> items;
 
-    CheckoutResponse(List<CheckoutItem> items){
+    public CheckoutResponse(List<CheckoutItem> items){
         this.total = 0;
         this.items = items;
+
+        for (int i=0; i<items.size(); i++){
+            total = total + items.get(i).getTotal();
+        }
     }
 }
 
