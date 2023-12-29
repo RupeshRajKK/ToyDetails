@@ -1,0 +1,46 @@
+{
+  "toyDetailsList": [
+    {
+      "id": 1000,
+      "price": 10,
+      "age": "3",
+      "name": "Car",
+      "imageURL": "src/media/Car.jpg"
+    },
+    {
+      "id": 1001,
+      "price": 10,
+      "age": "3",
+      "name": "Bike",
+      "imageURL": "src/media/Bike.jpg"
+    },
+    {
+      "id": 1002,
+      "price": 10,
+      "age": "3",
+      "name": "Cycle",
+      "imageURL": "src/media/Cycle.jpg"
+    },
+    {
+      "id": 1003,
+      "price": 10,
+      "age": "5",
+      "name": "Bus",
+      "imageURL": "src/media/Bus.jpg"
+    },
+    {
+      "id": 1004,
+      "price": 10,
+      "age": "5",
+      "name": "Doctor Set",
+      "imageURL": "src/media/Doctor Set.jpg"
+    },
+    {
+      "id": 1005,
+      "price": 10,
+      "age": "2",
+      "name": "Building Blocks",
+      "imageURL": "src/media/Building Blocks.jpg"
+    }
+  ]
+}

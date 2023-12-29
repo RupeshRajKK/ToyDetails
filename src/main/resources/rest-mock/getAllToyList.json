@@ -1,0 +1,137 @@
+{
+  "toyDetailsList": [
+    {
+      "id": 1000,
+      "price": 10,
+      "age": "3",
+      "name": "Car",
+      "imageURL": "src/media/Car.jpg"
+    },
+    {
+      "id": 1001,
+      "price": 10,
+      "age": "3",
+      "name": "Bike",
+      "imageURL": "src/media/Bike.jpg"
+    },
+    {
+      "id": 1002,
+      "price": 10,
+      "age": "3",
+      "name": "Cycle",
+      "imageURL": "src/media/Cycle.jpg"
+    },
+    {
+      "id": 1003,
+      "price": 10,
+      "age": "5",
+      "name": "Bus",
+      "imageURL": "src/media/Bus.jpg"
+    },
+    {
+      "id": 1004,
+      "price": 10,
+      "age": "5",
+      "name": "Doctor Set",
+      "imageURL": "src/media/Doctor Set.jpg"
+    },
+    {
+      "id": 1005,
+      "price": 10,
+      "age": "2",
+      "name": "Building Blocks",
+      "imageURL": "src/media/Building Blocks.jpg"
+    },
+    {
+      "id": 1006,
+      "price": 5,
+      "age": "1",
+      "name": "Duck",
+      "imageURL": "src/media/Duck.jpg"
+    },
+    {
+      "id": 1007,
+      "price": 5,
+      "age": "1",
+      "name": "Ball",
+      "imageURL": "src/media/Ball.jpg"
+    },
+    {
+      "id": 1008,
+      "price": 5,
+      "age": "1",
+      "name": "Sticks",
+      "imageURL": "src/media/Sticks.jpg"
+    },
+    {
+      "id": 1009,
+      "price": 5,
+      "age": "4",
+      "name": "Billing Set",
+      "imageURL": "src/media/Billing Set.jpg"
+    },
+    {
+      "id": 1010,
+      "price": 15,
+      "age": "2",
+      "name": "Bubble car",
+      "imageURL": "src/media/Bubble car.jpg"
+    },
+    {
+      "id": 1011,
+      "price": 15,
+      "age": "3",
+      "name": "Soft Bear",
+      "imageURL": "src/media/Soft Bear.jpg"
+    },
+    {
+      "id": 1012,
+      "price": 15,
+      "age": "5",
+      "name": "Paw Patrol Skie ",
+      "imageURL": "src/media/Paw Patrol Skie .jpg"
+    },
+    {
+      "id": 1013,
+      "price": 15,
+      "age": "10",
+      "name": "Smart Watch",
+      "imageURL": "src/media/Smart Watch.jpg"
+    },
+    {
+      "id": 1014,
+      "price": 20,
+      "age": "5",
+      "name": "Kitchen Set",
+      "imageURL": "src/media/Kitchen Set.jpg"
+    },
+    {
+      "id": 1017,
+      "price": 25,
+      "age": "10",
+      "name": "Scooter",
+      "imageURL": "src/media/Scooter.jpg"
+    },
+    {
+      "id": 1018,
+      "price": 25,
+      "age": "8",
+      "name": "Robot",
+      "imageURL": "src/media/Robot.jpg"
+    },
+    {
+      "id": 1019,
+      "price": 25,
+      "age": "8",
+      "name": "Laptop Advanced",
+      "imageURL": "src/media/Laptop Advanced.jpg"
+    },
+    {
+      "id": 1020,
+      "price": 30,
+      "age": "4",
+      "name": "Laptop Basic",
+      "imageURL": "src/media/Laptop Basic.jpg"
+    }
+  ]
+}

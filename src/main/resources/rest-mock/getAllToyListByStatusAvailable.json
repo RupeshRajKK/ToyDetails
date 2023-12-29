@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1000,
+      "status": "available"
+    },
+    {
+      "id": 1001,
+      "status": "available"
+    },
+    {
+      "id": 1002,
+      "status": "available"
+    },
+    {
+      "id": 1003,
+      "status": "available"
+    },
+    {
+      "id": 1004,
+      "status": "available"
+    },
+    {
+      "id": 1005,
+      "status": "available"
+    },
+    {
+      "id": 1006,
+      "status": "available"
+    },
+    {
+      "id": 1007,
+      "status": "available"
+    },
+    {
+      "id": 1008,
+      "status": "available"
+    },
+    {
+      "id": 1009,
+      "status": "outOfStock"
+    },
+    {
+      "id": 1013,
+      "status": "available"
+    },
+    {
+      "id": 1014,
+      "status": "available"
+    }
+]
