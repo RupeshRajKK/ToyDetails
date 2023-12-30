@@ -1,6 +1,6 @@
 package com.kidzoo.toydetails.client;
 
-import com.kidzoo.toydetails.client.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.ToyDetailsEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

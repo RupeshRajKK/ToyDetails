@@ -1,6 +1,6 @@
 package com.kidzoo.toydetails.controller;
 
-import com.kidzoo.toydetails.client.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.ToyDetailsEntity;
 import com.kidzoo.toydetails.model.response.ToyDetailsResponse;
 import com.kidzoo.toydetails.model.response.ToyStatusById;
 import com.kidzoo.toydetails.service.ToyDetailsServiceImpl;

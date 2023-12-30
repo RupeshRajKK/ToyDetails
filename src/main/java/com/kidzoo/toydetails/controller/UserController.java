@@ -1,7 +1,6 @@
 package com.kidzoo.toydetails.controller;
 
-import com.kidzoo.toydetails.client.entity.Basket;
-import com.kidzoo.toydetails.client.entity.UserEntity;
+import com.kidzoo.toydetails.entity.UserEntity;
 import com.kidzoo.toydetails.dao.GeneralResponse;
 import com.kidzoo.toydetails.exception.UserAlreadyExistException;
 import com.kidzoo.toydetails.exception.UserNotFoundException;

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kidzoo.toydetails.client.InventoryClient;
 import com.kidzoo.toydetails.client.ToyDetailsClient;
-import com.kidzoo.toydetails.client.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.ToyDetailsEntity;
 import com.kidzoo.toydetails.common.CommonMethods;
 import com.kidzoo.toydetails.model.response.ToyDetailsResponse;
 import com.kidzoo.toydetails.model.response.ToyStatusById;

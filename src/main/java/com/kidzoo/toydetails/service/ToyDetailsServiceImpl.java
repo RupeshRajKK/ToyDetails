@@ -3,8 +3,7 @@ package com.kidzoo.toydetails.service;
 import com.kidzoo.toydetails.client.InventoryClient;
 import com.kidzoo.toydetails.client.ToyDetailsClient;
 
-import com.kidzoo.toydetails.client.entity.Basket;
-import com.kidzoo.toydetails.client.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.ToyDetailsEntity;
 import com.kidzoo.toydetails.exception.ToyDetailsCustomException;
 import com.kidzoo.toydetails.model.response.ToyDetailsResponse;
 import com.kidzoo.toydetails.model.response.ToyStatusById;

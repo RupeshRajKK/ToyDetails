@@ -1,4 +1,4 @@
-package com.kidzoo.toydetails.client.entity;
+package com.kidzoo.toydetails.entity;
 
 import lombok.*;
 

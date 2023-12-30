@@ -1,6 +1,6 @@
 package com.kidzoo.toydetails.service;
 
-import com.kidzoo.toydetails.client.entity.UserEntity;
+import com.kidzoo.toydetails.entity.UserEntity;
 import com.kidzoo.toydetails.dao.GeneralResponse;
 import com.kidzoo.toydetails.exception.UserAlreadyExistException;
 import com.kidzoo.toydetails.exception.UserNotFoundException;
@@ -34,4 +34,5 @@ public class UserServiceImpl {
         userRepository.deleteById(id);
         return new GeneralResponse(true,"user deleted successfully");
     }
+
 }
