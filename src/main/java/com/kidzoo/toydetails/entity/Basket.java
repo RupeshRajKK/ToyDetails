@@ -1,4 +1,4 @@
-package com.kidzoo.toydetails.client.entity;
+package com.kidzoo.toydetails.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,4 +18,5 @@ public class Basket {
     private int basketId;
     private int quantity;
     private int toyId;
+    private int userId;
 }

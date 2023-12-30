@@ -1,7 +1,7 @@
 package com.kidzoo.toydetails.model.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.kidzoo.toydetails.client.entity.Basket;
+import com.kidzoo.toydetails.entity.Basket;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,6 +1,6 @@
 package com.kidzoo.toydetails.controller;
 
-import com.kidzoo.toydetails.client.entity.Basket;
+import com.kidzoo.toydetails.entity.Basket;
 import com.kidzoo.toydetails.dao.CheckoutResponse;
 import com.kidzoo.toydetails.dao.GeneralResponse;
 import com.kidzoo.toydetails.service.BasketServiceImpl;
@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.web.bind.annotation.*;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.List;
 
@@ -49,5 +48,9 @@ public class BasketController {
         return basketService.checkoutResponse();
     }
 
+    @GetMapping(value = "/checkout/{id}", produces = "application/hal+json")
+    public CheckoutResponse checkoutByUserId(@PathVariable int id){
+        return basketService.checkoutByUserId(id);
+    }
 }
 

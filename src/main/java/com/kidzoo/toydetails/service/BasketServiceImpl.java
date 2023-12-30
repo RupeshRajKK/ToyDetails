@@ -1,20 +1,19 @@
 package com.kidzoo.toydetails.service;
 
 import com.kidzoo.toydetails.client.BasketDetailsClient;
-import com.kidzoo.toydetails.client.ToyDetailsClient;
-import com.kidzoo.toydetails.client.entity.Basket;
-import com.kidzoo.toydetails.client.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.Basket;
+import com.kidzoo.toydetails.entity.ToyDetailsEntity;
+import com.kidzoo.toydetails.entity.UserEntity;
 import com.kidzoo.toydetails.dao.CheckoutItem;
 import com.kidzoo.toydetails.dao.CheckoutResponse;
 import com.kidzoo.toydetails.dao.GeneralResponse;
 import com.kidzoo.toydetails.exception.ToyDetailsCustomException;
 import com.kidzoo.toydetails.model.response.BasketDetailsResponse;
-import com.kidzoo.toydetails.model.response.ToyDetails;
 import com.kidzoo.toydetails.repository.BasketRepository;
 import com.kidzoo.toydetails.repository.ToyDetailsRepository;
+import com.kidzoo.toydetails.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,6 +32,9 @@ public class BasketServiceImpl {
     @Autowired
     private ToyDetailsRepository toyDetailsRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
     String referenceId = UUID.randomUUID().toString();
 
     public BasketDetailsResponse getBasketDetails() {
@@ -47,13 +49,21 @@ public class BasketServiceImpl {
 
     public GeneralResponse add(Basket basket) {
         ToyDetailsEntity product = toyDetailsRepository.findById(basket.getToyId()).orElse(null);
-//        System.out.println("basket= " + basket);
-//        System.out.println("Toy= " + product.toString());
-        if (product != null) {
+        if (product == null){
+            return new GeneralResponse(false,"Product not found");
+        }
+        UserEntity users = userRepository.findById(basket.getUserId()).orElse(null);
+        if (users == null){
+            return new GeneralResponse(false,"User not found");
+        }
+        Basket dbobj= repository.findByToyIdAndUserId(basket.getToyId(), basket.getUserId());
+        if (dbobj == null) {
             repository.save(basket);
             return new GeneralResponse(true, "Succcessfully added to basket");
         }
-        return new GeneralResponse(false, "Invalid toy id.");
+        dbobj.setQuantity(basket.getQuantity());
+        update(dbobj);
+        return new GeneralResponse(true, "Succcessfully updated to basket");
     }
 
     public Basket update(Basket basket) {
@@ -85,6 +95,11 @@ public class BasketServiceImpl {
 
     public CheckoutResponse checkoutResponse() {
        List<CheckoutItem> items = repository.checkout();
+        return new CheckoutResponse(items);
+    }
+
+    public CheckoutResponse checkoutByUserId(int id){
+        List<CheckoutItem> items = repository.checkoutByUserId(id);
         return new CheckoutResponse(items);
     }
 }
